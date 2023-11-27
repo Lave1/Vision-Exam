@@ -1,9 +1,0 @@
-riconoscimeto di oggeti con la telecamera del pc
-
-link del dataset che contiene il train e il test http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html#devkit
-
-
-chrome_driver_path = "C:/Users/AlessandroLaVeglia/OneDrive - ITS Angelo Rizzoli/Desktop/chromedriver-win32/chromedriver.exe"
-
-
-download_directory = "C:/Users/AlessandroLaVeglia/repo_git/Vision-Exam/immagini"
