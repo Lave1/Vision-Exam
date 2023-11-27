@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Define the CNN model
-num_classes = len(os.listdir("C:/Users/Marco/Desktop/Scuola ITS/robe Git/Vision-Exam/immagini"))
+num_classes = len(os.listdir("C:/Users/AlessandroLaVeglia/repo_git/Vision-Exam/immagini"))
 model = models.Sequential()
 model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(128, 128, 3)))
 model.add(layers.MaxPooling2D((2, 2)))
@@ -26,7 +26,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 train_datagen = ImageDataGenerator(rescale=1./255, validation_split=0.2)
 
 # Load and split the dataset
-base_dir = 'C:/Users/Marco/Desktop/Scuola ITS/robe Git/Vision-Exam/immagini'
+base_dir = 'C:/Users/AlessandroLaVeglia/repo_git/Vision-Exam/immagini'
 train_generator = train_datagen.flow_from_directory(
     base_dir,
     target_size=(128, 128),
@@ -85,7 +85,7 @@ plt.title('Confusion Matrix')
 plt.show()
 
 # Example of predicting a single image
-image_to_predict = "C:/Users/Marco/Desktop/Scuola ITS/robe Git/Vision-Exam/immagini_di_prova/bottiglietta di plastica/bottiglietta di plastica_204.jpg"
+image_to_predict = "C:/Users/AlessandroLaVeglia/repo_git/Vision-Exam/immagini_di_prova/bottiglietta di plastica/bottiglietta di plastica_204.jpg"
 class_names = ["borraccia", "bottiglia di plastica", "bottiglia di vetro", "bottiglietta di plastica", "cuffie", "headset", "keyboard", "mouse", "smartphone"]
 
 prediction_result = predict_single_image(model, image_to_predict, class_names)
@@ -97,3 +97,4 @@ for key, value in prediction_result.items():
             print(f"  {class_name}: {confidence_level:.2f}%")
     else:
         print(f"{key}: {value}")
+
