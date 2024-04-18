@@ -84,7 +84,7 @@ pandas==2.1.1
 parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1638334955874/work
 pefile==2023.2.7
 pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1602536217715/work
-Pillow==10.1.0
+Pillow==10.2.0
 pipeline==0.1.0
 platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1696272223550/work
 posthog==3.0.2
