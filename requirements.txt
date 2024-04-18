@@ -141,7 +141,7 @@ torchvision==0.16.0
 tornado @ file:///C:/b/abs_0cbrstidzg/croot/tornado_1696937003724/work
 tqdm==4.66.1
 traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1696377679271/work
-transformers==4.32.1
+transformers==4.36.0
 typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1695040754690/work
 tzdata==2023.3
 url-normalize==1.4.3
